@@ -13,7 +13,7 @@ import (
 
 func main() {
 
-	log := log.New(os.Stdout, "products-api", log.LstdFlags)
+	log := log.New(os.Stdout, "currency-api", log.LstdFlags)
 
 	gs := grpc.NewServer()
 	cs := server.NewCurrency(log)
